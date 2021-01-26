@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myweb-rs
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      env: prod
+    matchExpressions:
+      - {key: team, operator: In, values: [team1]}
+
+  template:
+      metadata:
+        name: webpod
+        labels:
+          env: prod
+          team: team1
+          region: IN
+      spec:
+        containers:
+          - name: rspod
+            image: vimal13/apache-webserver-php
