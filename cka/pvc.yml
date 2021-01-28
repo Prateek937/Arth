@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mypvc
+
+spec:
+  # NUll will set it to static PV
+  storageClassName: ""
+  
+  # set the access modes
+  accessModes:
+    - ReadWriteOnce
+
+  # what I wanna do
+  resources:
+    requests:    
+      storage: 1Gi
