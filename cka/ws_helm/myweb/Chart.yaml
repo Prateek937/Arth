@@ -1,0 +1,6 @@
+apiVersion: v1
+name: myweb
+version: 0.1
+appVersion: 1.0
+description: This is my apache httpd server package
+

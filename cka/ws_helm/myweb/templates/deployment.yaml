@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: myd
+  name: myd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myd
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: myd
+    spec:
+      containers:
+      - image: vimal13/webserver-apache-php
+        name: webserver-apache-php
+        
