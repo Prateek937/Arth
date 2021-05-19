@@ -25,7 +25,7 @@ resource "aws_ebs_volume" "st1" {
 	size = 10
 
 	tags = {
-		Na e = "LinuxWorld HD New"
+		Name = "LinuxWorld HD New"
 	}
 }
 
