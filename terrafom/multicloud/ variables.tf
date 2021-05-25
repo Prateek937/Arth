@@ -1,4 +1,4 @@
-variable "x" {
+variable "instance_class" {
     # default datatype is string.
 }
 
@@ -7,8 +7,17 @@ variable "y" {
     
 }
 
+variable "istest" {
+    type = bool
+}
+
+variable "azaws" {
+    default = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
+    
+}
+
 output "o1" {
-    value = var.x
+    value = var.instance_class
 }
 
 output "os2" {

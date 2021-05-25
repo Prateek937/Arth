@@ -1,3 +1,3 @@
 # all the default value of varibales.tf here.
-x = "t2.large"
+instance_class = "t2.micro"
 y = true
