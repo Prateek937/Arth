@@ -1,0 +1,33 @@
+<script>
+    function alertBox(){
+        alert("Hiii!")
+    }
+
+    function confirmBox(){
+        confirm("Hiii");
+    }
+    
+    function confirmRedirect(){
+        var x = confirm("Are you sure you want to redirect to Google.com?")
+
+        if (x == true){
+            document.location = "https://www.google.com";
+        }
+        else{
+            alert("Cancelled redirect");
+        }
+    }
+
+</script>
+
+<h2> Click below for alert Box</h2>
+<button onclick="alertBox()">Box</button><br/>
+
+<h2> Click below for confirm Box</h2>
+<button onclick="confirmBox()">Confirm</button><br/>
+
+<h2> Click below for confirm Box for redirecting to Google.com</h2>
+<button onclick="confirmRedirect()">Confirm and Redirect</button><br/>
+
+<h2> Click below for prompt Box</h2>
+<button onclick="promptBox()">prompt</button><br/>

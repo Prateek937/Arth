@@ -1,0 +1,5 @@
+# terraform reads the different  files in alphabatical order. 
+
+# It also uses inferring concept. It means it will use the resources according to dependencies on each other. 
+
+

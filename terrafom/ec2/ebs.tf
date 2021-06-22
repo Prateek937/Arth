@@ -15,7 +15,7 @@ resource "aws_instance" "os1" {
 }
 
 output "os1" {
-	value = aws_instance.os1
+	value = aws_instance.os1	
 }
 
 
